@@ -1,0 +1,101 @@
+job_id,job_title,job_description,required_skills,experience,user_id
+1,Data Scientist,"Looking for a data scientist with strong experience in Python, Machine Learning, and data analysis","Python, Machine Learning, Data Analysis",3,1
+2,Frontend Developer,"Seeking a frontend developer proficient in JavaScript, HTML, CSS, and React","JavaScript, HTML, CSS, React",2,2
+3,Database Administrator,"Responsible for managing and optimizing SQL databases, must have experience with PostgreSQL","SQL, Database Management, PostgreSQL",4,3
+4,Full Stack Developer,"Looking for a full stack developer with strong skills in React, Redux, and Node.js","React, Redux, Node.js",5,4
+5,Embedded Systems Engineer,"Embedded Systems Engineer required with experience in C++ and hardware interfacing","C++, Embedded Systems, Hardware",6,5
+6,Backend Developer,"Backend Developer with experience in Python, Flask, and API development","Python, Flask, API Development",2,6
+7,AI Engineer,"AI Engineer needed with skills in TensorFlow, Keras, and deep learning models","TensorFlow, Keras, Neural Networks",3,7
+8,Backend Developer,"Backend Developer required with expertise in Java, Spring Framework, and Hibernate","Java, Spring, Hibernate",7,8
+9,Frontend Developer,"Frontend Developer with skills in HTML, CSS, and JavaScript needed for building responsive websites","HTML, CSS, JavaScript",2,9
+10,Data Analyst,"Entry-level Data Analyst position requiring skills in Python, Pandas, and data visualization","Python, Pandas, Data Visualization",1,10
+11,Frontend Developer,"Frontend Developer required with experience in Angular and TypeScript","Angular, TypeScript, JavaScript",4,11
+12,Mobile Developer,"iOS Developer with expertise in Swift and iOS development needed","Swift, iOS Development",3,12
+13,DevOps Engineer,"Looking for a DevOps Engineer experienced in AWS, Docker, and Kubernetes","AWS, Docker, Kubernetes",5,13
+14,NLP Engineer,"NLP Engineer needed for chatbot development, must have experience with Python and natural language processing","Python, NLP, Chatbots",4,14
+15,Backend Developer,"Backend Developer required with strong skills in Golang and microservices architecture","Golang, Microservices, Distributed Systems",6,15
+16,Mobile Developer,"Android Developer with experience in Java and Android Development required","Java, Android Development",3,16
+17,Backend Developer,"Looking for a PHP Developer with Laravel experience","PHP, Laravel, MySQL",5,17
+18,Web Developer,"Entry-level web developer with skills in HTML, CSS, Bootstrap, and JavaScript needed","HTML, CSS, Bootstrap, JavaScript",1,18
+19,Data Scientist,"Experienced Data Scientist required with skills in R, data mining, and machine learning","R, Data Mining, Machine Learning",4,19
+20,Frontend Developer,"Frontend Developer with experience in Vue.js, JavaScript, and CSS","Vue.js, JavaScript, CSS",2,20
+21,Data Scientist,"Data Scientist with experience in Python and Machine Learning","Python, Machine Learning",3,1
+22,Software Developer,"Software Developer with experience in Java, Python, and C++","Java, Python, C++",5,2
+23,Database Developer,"Database Developer with expertise in SQL and NoSQL databases","SQL, NoSQL",4,3
+24,Full Stack Engineer,"Full Stack Engineer with experience in React and Node.js","React, Node.js",5,4
+25,Embedded Software Engineer,"Embedded Software Engineer with experience in C and hardware integration","C, Hardware Integration",6,5
+26,Backend Developer,"Backend Developer with experience in Ruby on Rails and API development","Ruby on Rails, API Development",3,6
+27,AI Research Scientist,"AI Research Scientist with skills in TensorFlow and deep learning","TensorFlow, Deep Learning",4,7
+28,Java Developer,"Java Developer with experience in Spring Boot and microservices","Spring Boot, Microservices",6,8
+29,Web Designer,"Web Designer with expertise in HTML, CSS, and UX/UI design","HTML, CSS, UX/UI Design",2,9
+30,Junior Data Analyst,"Junior Data Analyst with skills in Excel and basic statistics","Excel, Basic Statistics",1,10
+31,Frontend Engineer,"Frontend Engineer with experience in Angular and TypeScript","Angular, TypeScript",4,11
+32,iOS Engineer,"iOS Engineer with experience in Swift and Objective-C","Swift, Objective-C",3,12
+33,Cloud DevOps Engineer,"Cloud DevOps Engineer with skills in AWS and CI/CD pipelines","AWS, CI/CD",5,13
+34,Chatbot Developer,"Chatbot Developer with expertise in NLP and Python","NLP, Python",4,14
+35,Senior Backend Developer,"Senior Backend Developer with experience in Golang and Kubernetes","Golang, Kubernetes",6,15
+36,Android Software Engineer,"Android Software Engineer with experience in Kotlin and Java","Kotlin, Java",3,16
+37,PHP Developer,"PHP Developer with expertise in Laravel and MySQL","Laravel, MySQL",5,17
+38,Junior Web Developer,"Junior Web Developer with skills in HTML, CSS, and JavaScript","HTML, CSS, JavaScript",1,18
+39,Senior Data Scientist,"Senior Data Scientist with skills in R and advanced analytics","R, Advanced Analytics",4,19
+40,Vue.js Developer,"Vue.js Developer with experience in modern JavaScript frameworks","Vue.js, JavaScript",2,20
+41,Machine Learning Engineer,"Machine Learning Engineer with expertise in Python and scikit-learn","Python, scikit-learn",3,1
+42,JavaScript Developer,"JavaScript Developer with experience in Node.js and React","Node.js, React",4,2
+43,Database Administrator,"Database Administrator with skills in MySQL and MongoDB","MySQL, MongoDB",5,3
+44,Web Developer,"Web Developer with skills in PHP and Laravel","PHP, Laravel",4,4
+45,Embedded Systems Specialist,"Embedded Systems Specialist with experience in C++ and microcontrollers","C++, Microcontrollers",6,5
+46,Flask Developer,"Flask Developer with experience in Python and web development","Python, Web Development",2,6
+47,Data Scientist,"Data Scientist with expertise in machine learning and data visualization","Machine Learning, Data Visualization",3,7
+48,Java Engineer,"Java Engineer with skills in Spring and Hibernate","Spring, Hibernate",7,8
+49,Frontend Developer,"Frontend Developer with experience in Bootstrap and responsive design","Bootstrap, Responsive Design",2,9
+50,Entry-Level Data Analyst,"Entry-Level Data Analyst with skills in data cleaning and visualization","Data Cleaning, Visualization",1,10
+51,Senior Frontend Developer,"Senior Frontend Developer with expertise in React and Redux","React, Redux",5,11
+52,iOS Application Developer,"iOS Application Developer with experience in Swift and mobile development","Swift, Mobile Development",3,12
+53,Senior DevOps Engineer,"Senior DevOps Engineer with skills in Docker and Kubernetes","Docker, Kubernetes",5,13
+54,NLP Specialist,"NLP Specialist with experience in chatbot development and Python","Chatbot Development, Python",4,14
+55,Lead Backend Developer,"Lead Backend Developer with expertise in Golang and distributed systems","Golang, Distributed Systems",6,15
+56,Android Developer,"Android Developer with experience in Java and Kotlin","Java, Kotlin",3,16
+57,PHP Web Developer,"PHP Web Developer with skills in Laravel and MySQL","Laravel, MySQL",5,17
+58,Junior Web Designer,"Junior Web Designer with skills in HTML, CSS, and UX design","HTML, CSS, UX Design",1,18
+59,Advanced Data Scientist,"Advanced Data Scientist with experience in predictive analytics and R","Predictive Analytics, R",5,19
+60,Front-End Developer,"Front-End Developer with expertise in Vue.js and CSS","Vue.js, CSS",2,20
+61,Data Analyst Intern,"Data Analyst Intern with basic skills in Python and Excel","Python, Excel",1,10
+62,Web Engineer,"Web Engineer with experience in JavaScript and server-side development","JavaScript, Server-Side Development",4,2
+63,SQL Developer,"SQL Developer with expertise in database management and optimization","Database Management, Optimization",5,3
+64,Software Engineer,"Software Engineer with skills in C# and .NET","C#, .NET",4,2
+65,Embedded Software Developer,"Embedded Software Developer with experience in microcontrollers and C","Microcontrollers, C",6,5
+66,Machine Learning Researcher,"Machine Learning Researcher with expertise in deep learning and TensorFlow","Deep Learning, TensorFlow",5,7
+67,Backend Software Engineer,"Backend Software Engineer with experience in Python and RESTful APIs","Python, RESTful APIs",4,6
+68,Full Stack Software Engineer,"Full Stack Software Engineer with expertise in React and Node.js","React, Node.js",5,4
+69,Cloud Infrastructure Engineer,"Cloud Infrastructure Engineer with experience in AWS and Google Cloud","AWS, Google Cloud",6,13
+70,JavaScript Engineer,"JavaScript Engineer with skills in Angular and frontend technologies","Angular, Frontend Technologies",4,2
+71,Technical Architect,"Technical Architect with experience in system design and architecture","System Design, Architecture",6,2
+72,Junior Frontend Engineer,"Junior Frontend Engineer with skills in HTML, CSS, and JavaScript","HTML, CSS, JavaScript",1,9
+73,Senior Data Analyst,"Senior Data Analyst with expertise in advanced data visualization and analytics","Data Visualization, Analytics",5,10
+74,AI Developer,"AI Developer with experience in machine learning models and TensorFlow","Machine Learning Models, TensorFlow",5,7
+75,Web Application Developer,"Web Application Developer with experience in server-side JavaScript and databases","Server-Side JavaScript, Databases",4,2
+76,Database Engineer,"Database Engineer with skills in SQL and NoSQL databases","SQL, NoSQL",5,3
+77,Mobile App Developer,"Mobile App Developer with experience in both Android and iOS platforms","Android, iOS",4,16
+78,Front End Web Developer,"Front End Web Developer with experience in modern JavaScript frameworks and tools","JavaScript, Modern Frameworks",3,2
+79,Backend Java Developer,"Backend Java Developer with expertise in Spring and microservices","Spring, Microservices",6,8
+80,Data Science Specialist,"Data Science Specialist with skills in Python and R for advanced analytics","Python, R",5,19
+81,Software Engineer Intern,"Software Engineer Intern with experience in Java and Python","Java, Python",1,2
+82,UX Designer,"UX Designer with skills in wireframing and prototyping","Wireframing, Prototyping",4,2
+83,Senior Backend Engineer,"Senior Backend Engineer with experience in Golang and microservices","Golang, Microservices",6,15
+84,Machine Learning Intern,"Machine Learning Intern with basic knowledge in TensorFlow and data preprocessing","TensorFlow, Data Preprocessing",1,7
+85,Frontend Architect,"Frontend Architect with expertise in building scalable front-end applications","Scalable Front-End Applications",6,2
+86,Senior Mobile Developer,"Senior Mobile Developer with extensive experience in iOS and Android","iOS, Android",6,12
+87,Cloud Solutions Architect,"Cloud Solutions Architect with skills in AWS and cloud architecture","AWS, Cloud Architecture",6,13
+88,Database Analyst,"Database Analyst with experience in SQL queries and database reporting","SQL, Database Reporting",4,3
+89,Junior Machine Learning Engineer,"Junior Machine Learning Engineer with skills in basic model training and evaluation","Model Training, Evaluation",1,7
+90,Lead Web Developer,"Lead Web Developer with expertise in full stack development and project management","Full Stack Development, Project Management",7,4
+91,Embedded Systems Engineer,"Embedded Systems Engineer with experience in C and low-level hardware programming","C, Hardware Programming",6,5
+92,Full Stack JavaScript Developer,"Full Stack JavaScript Developer with experience in React, Node.js, and MongoDB","React, Node.js, MongoDB",5,4
+93,Data Engineering Intern,"Data Engineering Intern with basic skills in ETL processes and data warehousing","ETL Processes, Data Warehousing",1,10
+94,Senior Data Engineer,"Senior Data Engineer with expertise in data pipelines and large-scale data processing","Data Pipelines, Large-Scale Data Processing",6,10
+95,DevOps Specialist,"DevOps Specialist with skills in continuous integration and deployment","CI/CD, Deployment",5,13
+96,Machine Learning Engineer Intern,"Machine Learning Engineer Intern with basic experience in model development and deployment","Model Development, Deployment",1,7
+97,Full Stack Developer Intern,"Full Stack Developer Intern with basic skills in frontend and backend technologies","Frontend, Backend",1,4
+98,Mobile App Development Intern,"Mobile App Development Intern with basic experience in Android or iOS app development","Android, iOS",1,16
+99,Data Scientist,"Data Scientist with experience in predictive modeling and machine learning","Predictive Modeling, Machine Learning",5,19
+100,Software Engineering Lead,"Software Engineering Lead with extensive experience in architecture, design, and development","Architecture, Design, Development",7,2

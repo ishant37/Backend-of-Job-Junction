@@ -1,0 +1,350 @@
+<html>
+  <head>
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="Profile.css" />
+
+  <body>
+    <!-- Updated Navbar -->
+    <div class="navbar">
+      <div class="logo">Job Junction</div>
+      <div class="menu">
+        <a href="http://localhost:8080/afterlogin"> HOME </a>
+        <a loading="lazy" href="learning.html"> LEARNING </a>
+        <a href="counsiling.html"> GUIDANCE </a>
+        <a href="#"> AI RESUME BUILDER </a>
+        <i class="fas fa-bell"></i>
+        <div class="icon-container">
+          <i class="fas fa-user" id="formIcon"></i>
+          <div class="dropdown-menu">
+            <a href="Profile.html">Your Profile</a>
+            <a href="Dashboard.html">Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img
+                alt="Profile image of John Doe"
+                class="profile-img"
+                src="images/tony.jpeg"
+              />
+              <h5 class="card-title mt-3">Avi Maheshawri</h5>
+              <p class="card-text">
+                Full Stack Developer
+                <br />
+                Avengers Tower, San Francisco, CA
+              </p>
+              <button class="btn btn-primary">Follow</button>
+              <button class="btn btn-outline-primary">Message</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fas fa-globe"></i> Website
+                  <span class="float-end">https://bootdey.com</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-github"></i> Github
+                  <span class="float-end">bootdey</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-twitter"></i> Twitter
+                  <span class="float-end">@bootdey</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-instagram"></i> Instagram
+                  <span class="float-end">bootdey</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-facebook"></i> Facebook
+                  <span class="float-end">bootdey</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <!-- Display section -->
+              <div id="displaySection">
+                <h5 class="card-title">Full Name</h5>
+                <p class="card-text" id="fullNameDisplay">Tony Stark</p>
+                <h5 class="card-title">Email</h5>
+                <p class="card-text" id="emailDisplay">ironman@gmail.com</p>
+                <h5 class="card-title">Phone</h5>
+                <p class="card-text" id="phoneDisplay">(239) 816-9029</p>
+                <h5 class="card-title">Mobile</h5>
+                <p class="card-text" id="mobileDisplay">(320) 380-4539</p>
+                <h5 class="card-title">Address</h5>
+                <p class="card-text" id="addressDisplay">
+                  Avengers Tower, San Francisco, CA
+                </p>
+                <button class="btn btn-primary" id="editBtn">Edit</button>
+              </div>
+
+              <!-- Edit form section (initially hidden) -->
+              <div id="editSection" style="display: none">
+                <h5 class="card-title">Full Name</h5>
+                <input
+                  type="text"
+                  id="fullNameInput"
+                  class="form-control"
+                  value="Tony Stark"
+                />
+                <h5 class="card-title mt-3">Email</h5>
+                <input
+                  type="email"
+                  id="emailInput"
+                  class="form-control"
+                  value="ironman@gmail.com"
+                />
+                <h5 class="card-title mt-3">Phone</h5>
+                <input
+                  type="text"
+                  id="phoneInput"
+                  class="form-control"
+                  value="(239) 816-9029"
+                />
+                <h5 class="card-title mt-3">Mobile</h5>
+                <input
+                  type="text"
+                  id="mobileInput"
+                  class="form-control"
+                  value="(320) 380-4539"
+                />
+                <h5 class="card-title mt-3">Address</h5>
+                <input
+                  type="text"
+                  id="addressInput"
+                  class="form-control"
+                  value="Avengers Tower, San Francisco, CA"
+                />
+                <button class="btn btn-success mt-3" id="saveBtn">Save</button>
+                <button class="btn btn-secondary mt-3" id="cancelBtn">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-title">Project Status</h6>
+                <p>Web Design <span class="float-end">80%</span></p>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    style="width: 80%"
+                  >
+                    80%
+                  </div>
+                </div>
+                <p>Website Markup <span class="float-end">72%</span></p>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    style="width: 72%"
+                  >
+                    72%
+                  </div>
+                </div>
+                <p>One Page <span class="float-end">89%</span></p>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    style="width: 89%"
+                  >
+                    89%
+                  </div>
+                </div>
+                <p>Mobile Template <span class="float-end">55%</span></p>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    style="width: 55%"
+                  >
+                    55%
+                  </div>
+                </div>
+                <p>Backend API <span class="float-end">66%</span></p>
+                <div class="progress mb-2">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    style="width: 66%"
+                  >
+                    66%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title">Project Status</h6>
+              <p>Web Design <span class="float-end">80%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 80%;">80%</div>
+              </div>
+              <p>Website Markup <span class="float-end">72%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 72%;">72%</div>
+              </div>
+              <p>One Page <span class="float-end">89%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 89%;">89%</div>
+              </div>
+              <p>Mobile Template <span class="float-end">55%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 55%;">55%</div>
+              </div>
+              <p>Backend API <span class="float-end">66%</span></p>
+              <div class="progress mb-2">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                  style="width: 66%;">66%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+          <!-- Education Section -->
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <input
+                class="form-control mb-3"
+                placeholder="School/University Name"
+                type="text"
+              />
+              <input
+                class="form-control mb-3"
+                placeholder="Degree/Course"
+                type="text"
+              />
+              <input
+                class="form-control mb-3"
+                placeholder="Year of Completion"
+                type="text"
+              />
+            </div>
+          </div>
+
+          <!-- Certificates Section -->
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Upload Resume</h5>
+              <!-- Upload Certificate Option -->
+              <input
+                class="form-control"
+                type="file"
+                accept=".pdf, .jpg, .png"
+              />
+              <small class="form-text text-muted mt-1"
+                >Upload your certificate (PDF, JPG, PNG).</small
+              >
+            </div>
+          </div>
+          <div class="card mt-3">
+            <div class="card-body">
+              <h5 class="card-title">Certificates</h5>
+              <!-- Upload Certificate Option -->
+              <input
+                class="form-control"
+                type="file"
+                accept=".pdf, .jpg, .png"
+              />
+              <small class="form-text text-muted mt-1"
+                >Upload your certificate (PDF, JPG, PNG).</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-links">
+        <a href="#">Policy and other Links</a>
+        <a href="#">Website Policy</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Grievance / Feedback</a>
+        <a href="#">FAQs</a>
+      </div>
+      <p>&copy; 2024 Copyright Centre for Electronic Governance, Jaipur</p>
+      <p>
+        Site is best viewed in IE 10 and above, supports Chrome, Firefox
+        Browsers with Version - x.x.x Released on 09/08/2024.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // JavaScript to toggle between display and edit mode
+      document.getElementById("editBtn").addEventListener("click", function () {
+        document.getElementById("displaySection").style.display = "none";
+        document.getElementById("editSection").style.display = "block";
+      });
+
+      document
+        .getElementById("cancelBtn")
+        .addEventListener("click", function () {
+          document.getElementById("displaySection").style.display = "block";
+          document.getElementById("editSection").style.display = "none";
+        });
+
+      document.getElementById("saveBtn").addEventListener("click", function () {
+        // Get the values from input fields
+        const fullName = document.getElementById("fullNameInput").value;
+        const email = document.getElementById("emailInput").value;
+        const phone = document.getElementById("phoneInput").value;
+        const mobile = document.getElementById("mobileInput").value;
+        const address = document.getElementById("addressInput").value;
+
+        // Update the display section with the new values
+        document.getElementById("fullNameDisplay").innerText = fullName;
+        document.getElementById("emailDisplay").innerText = email;
+        document.getElementById("phoneDisplay").innerText = phone;
+        document.getElementById("mobileDisplay").innerText = mobile;
+        document.getElementById("addressDisplay").innerText = address;
+
+        // Switch back to the display section
+        document.getElementById("displaySection").style.display = "block";
+        document.getElementById("editSection").style.display = "none";
+      });
+    </script>
+  </body>
+</html>

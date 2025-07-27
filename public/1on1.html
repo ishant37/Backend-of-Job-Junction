@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-on-One Mentorship</title>
+    <link rel="stylesheet" href="1on1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Mentor Profile Section -->
+      <div class="mentor-profile">
+        <img src="images/expert.jpg" alt="Mentor Photo" />
+        <h2>John Doe</h2>
+        <p>Senior Software Engineer at XYZ</p>
+        <p>Expertise: Web Development, AI, Blockchain</p>
+      </div>
+
+      <!-- Scheduling Section -->
+      <div class="scheduling-section">
+        <!-- Availability Calendar -->
+        <div class="calendar">
+          <h3>Available Slots</h3>
+          <div class="calendar-grid">
+            <div class="slot available">Sep 22, 10:00 AM</div>
+            <div class="slot available">Sep 22, 12:00 PM</div>
+            <div class="slot unavailable">Sep 22, 2:00 PM</div>
+            <div class="slot available">Sep 23, 9:00 AM</div>
+            <!-- More slots -->
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+          <h3>Book a Session</h3>
+          <form>
+            <label for="date">Choose Date and Time:</label>
+            <input type="datetime-local" id="date" name="date" />
+            <label for="topic">Discussion Topic:</label>
+            <input
+              type="text"
+              id="topic"
+              name="topic"
+              placeholder="Enter the topic"
+            />
+            <button type="submit">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Payment Section -->
+      <div class="payment-section">
+        <h3>Payment Details</h3>
+        <p>Session Fee: $50/hour</p>
+        <button>Confirm Payment</button>
+      </div>
+
+      <!-- Upcoming Sessions -->
+      <div class="upcoming-sessions">
+        <h3>Upcoming Sessions</h3>
+        <div class="session">
+          <p>Sep 22, 10:00 AM with John Doe</p>
+          <button>Reschedule</button>
+          <button>Cancel</button>
+        </div>
+        <!-- More upcoming sessions -->
+      </div>
+
+      <!-- Start Session Button -->
+      <div class="start-session">
+        <button><a href="videochat.html">Start Chat/Video Call</a></button>
+      </div>
+    </div>
+  </body>
+</html>

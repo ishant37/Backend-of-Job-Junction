@@ -1,0 +1,146 @@
+body {
+  color: black;
+}
+
+.hero-section {
+  background: url("https://path-to-your-image.jpg") no-repeat center center;
+  background-size: cover;
+  color: rgb(14, 13, 13);
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  animation: fadeInDown 1s;
+}
+
+.hero-section p.lead {
+  font-size: 20px;
+  animation: fadeInUp 1s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar .menu a {
+  color: rgb(3, 2, 2);
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .menu a:hover {
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.navbar .fas {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navbar .icon-container .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.navbar .icon-container:hover .dropdown-menu {
+  display: block;
+}
+
+.card {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.progress-section .progress-bar {
+  transition: width 1s ease-in-out;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+
+  /* Could be more or less, depending on screen size */
+}
+
+.modal-content {
+  height: 600px;
+  /* Adjust this value as needed */
+  overflow-y: auto;
+  margin-left: 30rem;
+  border: 1px solid grey;
+  /* Add this if you want scrollable content */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+#postJobBtn {
+  font-size: 3rem;
+  /* Makes the button text larger */
+  padding: 15px 30px;
+  height: 120px;
+  /* Adds more padding to increase size */
+  width: 50%;
+  margin-left: 27rem;
+  /* Makes the button full-width */
+  text-align: center;
+}

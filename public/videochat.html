@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentorship Video Chat</title>
+    <link rel="stylesheet" href="videochat.css" />
+  </head>
+  <body>
+    <div class="video-chat-container">
+      <!-- Video Section -->
+      <div class="video-section">
+        <div class="video-wrapper">
+          <!-- Local User Camera -->
+          <video id="user-video" autoplay muted playsinline></video>
+          <!-- Mentor's Placeholder Video -->
+          <div class="mentor-video">
+            <img src="images/expert.jpg" alt="Mentor" style="width: 630px" />
+          </div>
+        </div>
+
+        <!-- Video Controls -->
+        <div class="video-controls">
+          <button id="start-chat" class="control-button">
+            Start Video Chat
+          </button>
+          <button class="control-button">Mute</button>
+          <button class="control-button">Stop Video</button>
+          <button class="control-button">Share Screen</button>
+          <button class="control-button">Record</button>
+          <button class="control-button"><a href="counsiling.html" style="text-decoration: none; color:white;"">Leave Meeting</a</button>
+        </div>
+      </div>
+
+      <!-- Chat Sidebar -->
+      <div class="chat-sidebar">
+        <h3>Live Chat</h3>
+        <div class="chat-messages">
+          <p><strong>Mentor:</strong> Welcome to the session!</p>
+          <p><strong>You:</strong> Thank you! Excited to start.</p>
+          <!-- More chat messages -->
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="chat-message"
+            placeholder="Type a message..."
+          />
+          <button id="send-chat">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="videochat.js"></script>
+  </body>
+</html>

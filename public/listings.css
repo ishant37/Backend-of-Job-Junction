@@ -1,0 +1,364 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  font-size: 24px;
+  color: #6a5acd;
+  font-weight: 700;
+}
+
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  justify-content: flex-end;
+}
+
+.header .icons {
+  display: flex;
+  align-items: center;
+}
+
+.header .icons i {
+  margin-left: 15px;
+  font-size: 18px;
+  color: black;
+}
+
+fieldset {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 3rem;
+  position: absolute;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-left: auto;
+  accent-color: #6a4b8a;
+}
+
+.main {
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  display: inline-table;
+  margin-left: 16rem;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.filters .filter-group {
+  display: flex;
+  align-items: center;
+}
+
+.filters .filter-group label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.filters .filter-group input {
+  margin-right: 5px;
+}
+
+Job Listings Container
+/* .job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+} */
+
+/* Each Job Item */
+/* .job-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.job-item:hover {
+  transform: translateY(-5px);
+}
+
+.job-details h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.job-details p {
+  margin-bottom: 8px;
+}
+
+.job-details p:last-child {
+  margin-bottom: 0;
+} */
+
+
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* .job-item .job-details {
+  flex: 1;
+} */
+
+.job-item .job-details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.job-item .job-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.job-item .job-details .rating {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.job-item .job-details .rating i {
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+.job-item .company-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-item .company-logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.job-item .company-logo .progress {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #6a5acd;
+}
+/* Dropdown for Sector Selection */
+form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 10px;
+  width: 200px;
+  border: 2px solid #4a4e69;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #4a4e69;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+select:hover,
+select:focus {
+  background-color: #eaeaea;
+}
+
+select option {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Job Description Section */
+.job-details {
+  color: #333;
+}
+
+.job-details h2 {
+  color: #4a4e69;
+}
+
+.job-details p {
+  font-size: 1rem;
+}
+
+.job-details p span {
+  font-weight: bold;
+}
+
+/* Rating and Reviews */
+.job-details .rating {
+  color: #f4a261;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .job-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  select {
+    width: 150px;
+  }
+}
+
+.job-details {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-details h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.rating i {
+  color: #f39c12;
+}
+
+.job-item {
+  max-width: 1200px; /* Or any width you prefer */
+  margin: 0 auto; /* Centers the container */
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of divs in case there are multiple */
+  justify-content: space-between; /* Distributes space between items */
+}
+.job-details {
+  width: 48%; /* Or 50%, adjust based on design needs */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-item::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.job-details {
+  margin-bottom: 20px; /* Keep consistent margin */
+}
+.job-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distributes the space between items */
+}
+
+.job-details {
+  flex: 1 1 48%; /* Allows two columns, adjust width as necessary */
+  margin-bottom: 20px;
+}
+.thumbs {
+  margin-left: 50rem;
+  margin-top: -30px;
+  gap: 20px;
+}
+.thumbs i {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray; /* Default color */
+}
+
+.thumbs i.active {
+  color: rgb(78, 78, 207); /* Color when active */
+}

@@ -1,0 +1,168 @@
+<html>
+
+<head>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #e9ecef;
+    }
+
+    .card {
+      margin: 20px;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .progress-bar {
+      background-color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn btn-primary" type="button" id="showMoreBtn">
+        Show More
+      </button>
+    </div>
+  </nav>
+
+  <!-- First page content wrapped in a container -->
+  <div id="firstPage">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img alt="Profile image of John Doe" class="profile-img" height="100"
+                src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-cWYsYnynjRP0srJcwgO62IYe.png?st=2024-09-18T04%3A42%3A38Z&amp;se=2024-09-18T06%3A42%3A38Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-18T01%3A14%3A56Z&amp;ske=2024-09-19T01%3A14%3A56Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=JTlo4gW92g%2BkOYBKuC8LkgGRSSpY/7y6ioqpj37uQec%3D"
+                width="100" />
+              <h5 class="card-title mt-3">
+                John Doe
+              </h5>
+              <p class="card-text">
+                Full Stack Developer
+                <br />
+                Bay Area, San Francisco, CA
+              </p>
+              <button class="btn btn-primary">
+                Follow
+              </button>
+              <button class="btn btn-outline-primary">
+                Message
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fas fa-globe"></i>
+                  Website
+                  <span class="float-end">https://bootdey.com</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-github"></i>
+                  Github
+                  <span class="float-end">bootdey</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-twitter"></i>
+                  Twitter
+                  <span class="float-end">@bootdey</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-instagram"></i>
+                  Instagram
+                  <span class="float-end">bootdey</span>
+                </li>
+                <li class="mb-2">
+                  <i class="fab fa-facebook"></i>
+                  Facebook
+                  <span class="float-end">bootdey</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Full Name</h5>
+              <p class="card-text">Kenneth Valdez</p>
+              <h5 class="card-title">Email</h5>
+              <p class="card-text">fip@jukmuh.al</p>
+              <h5 class="card-title">Phone</h5>
+              <p class="card-text">(239) 816-9029</p>
+              <h5 class="card-title">Mobile</h5>
+              <p class="card-text">(320) 380-4539</p>
+              <h5 class="card-title">Address</h5>
+              <p class="card-text">Bay Area, San Francisco, CA</p>
+              <button class="btn btn-primary">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second page content (initially hidden) -->
+  <div class="collapse" id="secondPage">
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Second Page Content</h5>
+              <p class="card-text">This is the content of the second page that slides down dynamically when the button
+                is clicked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#showMoreBtn").click(function () {
+        // Hide the first page
+        $("#firstPage").fadeOut("slow", function () {
+          // Once the first page is hidden, load and show the second page
+          $("#secondPage").load("Dashboard.html", function () {
+            // Once loaded, slide down the second page
+            $("#secondPage").slideDown("slow");
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

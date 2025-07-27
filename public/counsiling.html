@@ -1,0 +1,290 @@
+<html>
+  <head>
+    <title>Mentorship Programs</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="counselling.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: #333; */
+        padding: 15px;
+        color: #050505;
+      }
+
+      .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4169e1;
+      }
+
+      .navbar ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        margin-left: 20px;
+      }
+
+      .navbar ul li a {
+        color: #030303;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .navbar ul li a:hover {
+        color: #3d4ac0;
+      }
+
+      .container {
+        text-align: center;
+        padding: 50px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 40px;
+        color: #333;
+      }
+
+      .text-section h2 {
+        font-size: 28px;
+        color: #555;
+      }
+
+      .text-section p {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.6;
+        margin: 20px 0;
+      }
+
+      .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .section.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .reverse {
+        flex-direction: row-reverse;
+      }
+
+      .section img {
+        border-radius: 10px;
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+      }
+
+      .text h2 {
+        font-size: 26px;
+        color: #333;
+      }
+
+      .text p {
+        font-size: 16px;
+        color: #666;
+        margin: 20px 0;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f9c13b;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #333;
+      }
+
+      /* Additional Animations */
+      .navbar {
+        animation: slideDown 1s ease;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100px);
+          opacity: 0;
+        }
+
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Button hover effect */
+      .btn:hover {
+        background-color: #333;
+        color: #f9c13b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">Job Junction</div>
+      <ul>
+        <li><a href="http://localhost:8080/afterlogin">HOME</a></li>
+        <li><a href="learning.html">LEARNING</a></li>
+        <li><a href="counsiling.html">GUIDANCE</a></li>
+        <li><a href="#">AI RESUME BUILDER</a></li>
+        <li><a href="Dashboard.html"> DASHBOARD </a></li>
+        <li>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-user"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="header overlay-text">
+        <h1></h1>
+      </div>
+      <div class="content">
+        <div class="text-section">
+          <!-- <h1 style="margin-top: -120px">Mentorship Program</h1> -->
+          <h2>Empower Your Career</h2>
+          <p>
+            Explore our Mentorship Program designed to help excel in your
+            career. Unlock your career potential with expert guidance through
+            YouTube Live, free Cluster Counseling, or 1-on-1 Mentor Connect for
+            personalized advice.
+          </p>
+        </div>
+        <div class="image-section" style="margin-top: -90px">
+          <img
+            alt="Illustration of a mentorship program"
+            src="images/mentor.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="section reverse">
+      <img
+        alt="YouTube Live Image"
+        height="300"
+        src="images/4905784.jpg"
+        width="600"
+      />
+      <div class="text">
+        <h2>
+          <span class="highlight">YouTube Live:</span> Learn from Industry
+          Experts
+        </h2>
+        <p>
+          Stay ahead of the curve with our free YouTube Live sessions, where top
+          industry experts share their insights on the latest trends,
+          technologies, and career advice.
+        </p>
+        <a class="btn" href="#">Join Now</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <img
+        alt="Cluster Counseling Image"
+        height="300"
+        src="images/sdsf.jpg"
+        width="600"
+      />
+      <div class="text">
+        <h2>Cluster Counseling</h2>
+        <p>
+          Join us for Cluster Counseling sessions, where groups of 10-20
+          students are guided by a dedicated mentor over a period of 6 months.
+        </p>
+        <a class="btn" href="#">Register for Group</a>
+      </div>
+    </div>
+
+    <div class="section reverse">
+      <img
+        alt="1-on-1 Mentor Connect Image"
+        height="300"
+        src="images/sad.png"
+        width="600"
+      />
+      <div class="text">
+        <h2>1-on-1 Mentor Connect</h2>
+        <p>
+          For those seeking personalized guidance and advice, our 1-on-1 Mentor
+          Connect program pairs you with an experienced mentor.
+        </p>
+        <a class="btn" href="1on1.html">Schedule a Session</a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-links">
+        <a href="#">Policy and other Links</a>
+        <a href="#">Website Policy</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Grievance / Feedback</a>
+        <a href="#">FAQs</a>
+      </div>
+      <p>&copy; 2024 Copyright Centre for Electronic Governance, Jaipur</p>
+      <p>
+        Site is best viewed in IE 10 and above, supports Chrome, Firefox
+        Browsers with Version - x.x.x Released on 09/08/2024.
+      </p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section");
+
+        function checkScroll() {
+          const triggerBottom = window.innerHeight * 0.85;
+
+          sections.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop < triggerBottom) {
+              section.classList.add("animate");
+            } else {
+              section.classList.remove("animate");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();
+      });
+    </script>
+  </body>
+</html>

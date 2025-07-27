@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="/listings.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Job Junction</div>
+      <nav>
+        <a href="http://localhost:8080/afterlogin">HOME</a>
+        <a href="learning.html">LEARNING</a>
+        <a href="counsiling.html">GUIDANCE</a>
+        <a href="#">TOOLS</a>
+        <a href="#">INTERVIEW PREP</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-user"></i>
+      </div>
+    </header>
+
+    <fieldset>
+      <div class="checkbox-group">
+        <label>
+          On Site Job
+          <input type="checkbox" id="onSiteCheckbox" />
+        </label>
+        <label>
+          Online
+          <input type="checkbox" id="onlineCheckbox" />
+        </label>
+        <label>
+          Hybrid
+          <input type="checkbox" id="hybridCheckbox" />
+        </label>
+      </div>
+
+      <label>
+        Private
+        <input type="checkbox" id="privateCheckbox" />
+      </label>
+      <label>
+        Government
+        <input type="checkbox" id="governmentCheckbox" />
+      </label>
+      <label>
+        Overseas
+        <input type="checkbox" id="overseasCheckbox" />
+      </label>
+      <br />
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">Current Location</label><br />
+      <div class="slidecontainer">
+        Distance Radius
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          id="myRange"
+        />
+      </div>
+
+      <form class="section-dropdown" action="/" method="get">
+        <select name="sector" onchange="this.form.submit()">
+          <option value="IT">IT</option>
+          <option value="Consulting">Consulting</option>
+          <option value="Finance">Finance</option>
+          <option value="Agriculture">Agriculture</option>
+        </select>
+      </form>
+    </fieldset>
+
+    <div class="main">
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Enter Designations / skills / Companies"
+        />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="filters">
+        <div id="filterContent" class="filter-content">
+          <h4>Selected Job Types:</h4>
+          <ul id="selectedFilters"></ul>
+        </div>
+      </div>
+
+      <!-- Dropdown for Sector Selection -->
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <!-- Job Listings -->
+      <div class="job-list">
+        <% for (const job of jobs) { %>
+        <div class="job-item">
+          <div
+            class="job-details"
+            style="
+              background-color: white;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <div
+              style="
+                font-size: 12px;
+
+                position: absolute;
+                margin-left: 51%;
+                padding-bottom: 10px;
+                background-color: rgb(225, 225, 225);
+                border-radius: 50%;
+                padding-left: 7px;
+                padding-right: 7px;
+                padding-top: 19px;
+                padding-bottom: 19px;
+              "
+            >
+              <p style="font-weight: 700">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%=job.employability%>
+              </p>
+
+              Employability
+            </div>
+            <h2><%= job.title %> at <%= job.company %></h2>
+            <p>Location: <%= job.location %></p>
+            <p>Experience: <%= job.experience %></p>
+            <p>Salary: <%= job.salary %></p>
+            <p>Description: <%= job.description %></p>
+            <div class="rating">
+              <i class="fas fa-star"></i> Rating: <%= job.rating %> (from <%=
+              job.reviews %> reviews)
+            </div>
+            <div class="thumbs">
+              <i class="fas fa-thumbs-up" id="thumb-up"></i>
+              <i class="fas fa-thumbs-down" id="thumb-down"></i>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Get the checkboxes and filter content elements
+    const onSiteCheckbox = document.getElementById("onSiteCheckbox");
+    const onlineCheckbox = document.getElementById("onlineCheckbox");
+    const hybridCheckbox = document.getElementById("hybridCheckbox");
+    const filterContent = document.getElementById("filterContent");
+    const selectedFilters = document.getElementById("selectedFilters");
+    // const selectedValue = "option2"; // Example selected value
+
+    const privateCheckbox = document.getElementById("privateCheckbox");
+    const governmentCheckbox = document.getElementById("governmentCheckbox");
+    const overseasCheckbox = document.getElementById("overseasCheckbox");
+    if (privateCheckbox.checked) {
+      const li = document.createElement("li");
+      li.textContent = "Private Job";
+      selectedFilters.appendChild(li);
+    }
+    if (governmentCheckbox.checked) {
+      const li = document.createElement("li");
+      li.textContent = "Government Job";
+      selectedFilters.appendChild(li);
+    }
+    if (overseasCheckbox.checked) {
+      const li = document.createElement("li");
+      li.textContent = "Overseas Job";
+      selectedFilters.appendChild(li);
+    }
+    privateCheckbox.addEventListener("change", updateFilterContent);
+    governmentCheckbox.addEventListener("change", updateFilterContent);
+    overseasCheckbox.addEventListener("change", updateFilterContent);
+
+    //dropdown logic below:
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedSector = urlParams.get("sector");
+
+    if (selectedSector) {
+      document.querySelector(
+        `option[value="${selectedSector}"]`
+      ).selected = true;
+    }
+
+    function updateFilterContent() {
+      // Clear the current list of filters
+      selectedFilters.innerHTML = "";
+
+      // Check which checkboxes are selected and add them to the list
+      if (onSiteCheckbox.checked) {
+        const li = document.createElement("li");
+        li.textContent = "On Site Job";
+        selectedFilters.appendChild(li);
+      }
+      if (onlineCheckbox.checked) {
+        const li = document.createElement("li");
+        li.textContent = "Online Job";
+        selectedFilters.appendChild(li);
+      }
+      if (hybridCheckbox.checked) {
+        const li = document.createElement("li");
+        li.textContent = "Hybrid Job";
+        selectedFilters.appendChild(li);
+      }
+
+      // If any checkbox is checked, show the filter content, otherwise hide it
+      if (
+        onSiteCheckbox.checked ||
+        onlineCheckbox.checked ||
+        hybridCheckbox.checked
+      ) {
+        filterContent.classList.add("active-filter");
+      } else {
+        filterContent.classList.remove("active-filter");
+      }
+    }
+
+    // Attach event listeners to the checkboxes
+    onSiteCheckbox.addEventListener("change", updateFilterContent);
+    onlineCheckbox.addEventListener("change", updateFilterContent);
+    hybridCheckbox.addEventListener("change", updateFilterContent);
+
+    // Initialize the filter content on page load
+    updateFilterContent();
+    // Get the thumbs-up and thumbs-down elements
+    const thumbUp = document.getElementById("thumb-up");
+    const thumbDown = document.getElementById("thumb-down");
+
+    // Add click event listeners
+    thumbUp.addEventListener("click", () => {
+      // When thumb-up is clicked, activate it and deactivate thumb-down
+      thumbUp.classList.add("active");
+      thumbDown.classList.remove("active");
+    });
+
+    thumbDown.addEventListener("click", () => {
+      // When thumb-down is clicked, activate it and deactivate thumb-up
+      thumbDown.classList.add("active");
+      thumbUp.classList.remove("active");
+    });
+  </script>
+</html>

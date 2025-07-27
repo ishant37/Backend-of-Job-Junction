@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/form.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="register">Register</h1>
+      <div class="main">
+        <div class="form-section">
+          <div class="upload">
+            <p>Upload your Resume</p>
+            <button>Select file</button>
+          </div>
+          <p class="or">or</p>
+          <div class="upload">
+            <p>
+              Upload Your <br />
+              photo
+            </p>
+            <button>Select file</button>
+          </div>
+          <form action="/register" method="POST">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="inputcss"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="inputcss"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="inputcss"
+              required
+            />
+
+            <label for="mobileno">Mobile Number</label>
+            <input
+              type="tel"
+              id="mobileno"
+              name="mobileno"
+              class="inputcss"
+              required
+            />
+
+            <label for="otp">OTP</label>
+            <input type="text" id="otp" name="otp" class="inputcss" required />
+
+            <label for="idtype">Identification</label>
+            <div class="identification">
+              <select id="idtype" name="idtype">
+                <option value="">Select Id Type</option>
+                <option value="aadhaar">Aadhar Number</option>
+                <option value="pan">PAN Number</option>
+                <option value="driving">Driving License</option>
+              </select>
+              <input
+                type="text"
+                name="idnumber"
+                placeholder="Enter Id Number"
+                class="inputcss"
+              />
+            </div>
+
+            <label for="workstatus">Work Status</label>
+            <input
+              type="text"
+              id="workstatus"
+              name="workstatus"
+              class="inputcss"
+            />
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" class="inputcss" />
+
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender" class="inputcss" />
+
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" class="inputcss" />
+
+            <label for="education">Education</label>
+            <input
+              type="text"
+              id="education"
+              name="education"
+              class="inputcss"
+            />
+
+            <label for="certifications">Certifications</label>
+            <input
+              type="text"
+              id="certifications"
+              name="certifications"
+              class="inputcss"
+            />
+
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" name="skills" class="inputcss" />
+
+            <label for="achievements">Achievements</label>
+            <input
+              type="text"
+              id="achievements"
+              name="achievements"
+              class="inputcss"
+            />
+
+            <label for="github">GitHub Link</label>
+            <div class="link-input">
+              <input type="text" id="github" name="github" class="inputcss" />
+              <button class="add-link" type="button">Add link +</button>
+            </div>
+
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">
+                Accept all Terms & Conditions <a href="#">(see T&C)</a>
+              </label>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="info-section">
+          <div class="google">
+            <img src="/images/google.webp" alt="Google Logo" />
+            <p>Register with Google</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#">Policy and other Links</a>
+        <a href="#">Website Policy</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Grievance / Feedback</a>
+        <a href="#">FAQs</a>
+      </div>
+      <p>&copy; 2024 Copyright Centre for Electronic Governance, Jaipur</p>
+      <p>
+        Site is best viewed in IE 10 and above, supports Chrome, Firefox
+        Browsers.
+      </p>
+    </footer>
+  </body>
+  <script src="/form.js"></script>
+</html>

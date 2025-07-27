@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2b2b2b;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: rgb(10, 8, 8);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+i:hover {
+  color: #0f31f3;
+}
+
+.navbar a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #dbc9a4;
+  bottom: -5px;
+  left: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #2b2b2b;
+}
+
+.header p {
+  font-size: 18px;
+  color: #2b2b2b;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.header button {
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.main-content .section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.main-content .section {
+  background-color: #2b2b2b;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-content .section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-content .section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.main-content .section button {
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main-content .section img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}

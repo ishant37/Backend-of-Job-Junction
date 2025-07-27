@@ -1,0 +1,235 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Container Styles */
+.container {
+  /* background-color: white; */
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.container .header {
+  background-color: #f8f9fa;
+  /* width: 100%; */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Content Styles */
+.content {
+  display: flex;
+  justify-content: space-between;
+  /* Distribute space between text and image */
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+  /* Add some gap between the text and image */
+}
+
+/* Text Section Styles */
+.text-section {
+  /* flex-basis: 30%; */
+  /* Set width relative to parent */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  /* border-radius: 10px; */
+  z-index: 2;
+  margin-right: -40rem;
+  /* Ensure text stays above other elements */
+}
+
+.text-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  width: 20rem;
+  /* Add spacing between letters */
+}
+
+/* Image Section Styles */
+.image-section {
+  flex-basis: 60%;
+  /* Set width relative to parent */
+  text-align: center;
+  z-index: 1;
+  /* Ensure image stays behind the text */
+}
+
+.image-section img {
+  width: 85rem;
+  margin-left: 10rem;
+  height: auto;
+  object-fit: cover;
+  left: 10rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  height: 50px;
+  width: 130px;
+  /* height: 10rem; */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.header h1 {
+  /* margin; */
+  font-size: 36px;
+
+  font-weight: 700;
+}
+
+.content {
+  padding: 20px;
+}
+.section {
+  background-color: #fff;
+  /* margin-bottom: 20px; */
+  margin: 10px 157px 20px 157px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.section img {
+  max-width: 50%;
+  height: auto;
+}
+
+.section .text {
+  max-width: 50%;
+  padding: 10px;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.section .btn:hover {
+  background-color: #0056b3;
+}
+
+.section .highlight {
+  color: #ff0000;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+img {
+  transition: all ease-in-out 0.3s;
+}
+
+.section.animate {
+  opacity: 1;
+  transform: translateY(0);
+  /* Reset to normal position */
+}
+
+img:hover {
+  transform: scale(1.04);
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a90e2;
+  /* position: relative; */
+  /* margin: 0px -20rem; */
+  justify-content: space-around;
+}
+footer {
+  background-color: #fffffa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin-right: 15px;
+  color: #007bff; /* Typical link color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Adds underline on hover for links */
+}
+
+footer p {
+  color: #333; /* Dark grey text color */
+  font-size: 0.875rem; /* Smaller font size for the footer text */
+}

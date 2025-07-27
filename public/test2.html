@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer Quiz</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <style>
+      body {
+        /* background-image: url("images/duplo24.jpg"); */
+        background-color: rgb(255, 250, 250);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .container {
+        max-width: 900px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+
+      h2 {
+        color: #0000ff;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: 500;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .btn-primary {
+        background-color: #0000ff;
+        border-color: #6c63ff;
+      }
+
+      .btn-primary:hover {
+        background-color: #5849d8;
+        border-color: #5849d8;
+      }
+
+      .clock {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff0000;
+        margin-bottom: 20px;
+      }
+
+      #result {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #e9ecef;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      #feedbackForm {
+        display: none;
+      }
+
+      #feedbackForm h3 {
+        margin-top: 20px;
+      }
+      .feedback {
+        height: 90px;
+        padding: 10px;
+      }
+      .stars {
+        display: inline-block;
+        direction: rtl;
+        font-size: 2rem;
+        color: #ddd;
+      }
+
+      .stars input {
+        display: none;
+      }
+
+      .stars label {
+        color: #e2c164;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0;
+        opacity: 0.9;
+        font-size: 50px;
+        color: rgb(46, 43, 43);
+        /* Fully transparent */
+        /* border: 1px solid #000; */
+      }
+
+      .stars label:hover,
+      .stars label:hover ~ label,
+      .stars input:checked ~ label {
+        color: #ce9c06d0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container my-5">
+      <!-- Timer -->
+      <div class="clock text-center" id="timer">Time Left: 10:00</div>
+
+      <!-- Quiz Form -->
+      <form id="quizForm">
+        <h2 class="text-center">Frontend Developer Quiz</h2>
+
+        <!-- MCQs Section -->
+        <div class="form-group">
+          <label>1. Which HTML tag is used to create a hyperlink?</label><br />
+          <input type="radio" name="q1" value="A" /> A) &lt;a&gt;<br />
+          <input type="radio" name="q1" value="B" /> B) &lt;link&gt;<br />
+          <input type="radio" name="q1" value="C" /> C) &lt;href&gt;<br />
+          <input type="radio" name="q1" value="D" /> D) &lt;hyper&gt;
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >2. What does the box-sizing: border-box; CSS property do?</label
+          ><br />
+          <input type="radio" name="q2" value="A" /> A) Includes padding and
+          border in the element's total width and height<br />
+          <input type="radio" name="q2" value="B" /> B) Excludes padding and
+          border from the element's total width and height<br />
+          <input type="radio" name="q2" value="C" /> C) Only includes padding<br />
+          <input type="radio" name="q2" value="D" /> D) Only includes the
+          border<br />
+        </div>
+        <hr />
+        <div class="form-group">
+          <label>3. What does HTML stand for?</label><br />
+          <input type="radio" name="q3" value="A" /> A) Hyper Text Markup
+          language<br />
+          <input type="radio" name="q3" value="B" /> B) Hyper Text Markup
+          land<br />
+          <input type="radio" name="q3" value="C" /> C) Hyper Transfer Memory
+          Language<br />
+          <input type="radio" name="q3" value="D" /> D) Hyper Transfer
+          Motherboard Language<br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >4. Which of the following is the correct way to add a comment in
+            CSS?</label
+          ><br />
+          <input type="radio" name="q4" value="A" /> A) // This is a comment<br />
+          <input type="radio" name="q4" value="B" /> B) /* This is a comment
+          */<br />
+          <input type="radio" name="q4" value="C" /> C) <-- This is a comment
+          --><br />
+          <input type="radio" name="q4" value="D" /> D) <-!This is a
+          comment-!><br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >5. Which JavaScript method is used to select an element by its
+            ID?</label
+          ><br />
+          <input type="radio" name="q5" value="A" /> A)
+          document.getElementByClassName()<br />
+          <input type="radio" name="q5" value="B" /> B)
+          document.querySelector()<br />
+          <input type="radio" name="q5" value="C" /> C)
+          document.getElementById()<br />
+          <input type="radio" name="q5" value="D" /> D)
+          document.getElementsByTagName()<br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >6. Which CSS property is used to change the text color of an
+            element?</label
+          ><br />
+          <input type="radio" name="q6" value="A" /> A) font-color<br />
+          <input type="radio" name="q6" value="B" /> B) text-color<br />
+          <input type="radio" name="q6" value="C" /> C) color<br />
+          <input type="radio" name="q6" value="D" /> D) background-color<br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >7. In JavaScript, which keyword is used to declare a
+            variable?</label
+          ><br />
+          <input type="radio" name="q7" value="A" /> A) new<br />
+          <input type="radio" name="q7" value="B" /> B) declare<br />
+          <input type="radio" name="q7" value="C" /> C) let<br />
+          <input type="radio" name="q7" value="D" /> D) def<br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >8. What is the default value of the position property in
+            CSS?</label
+          ><br />
+          <input type="radio" name="q8" value="A" /> A) relative<br />
+          <input type="radio" name="q8" value="B" /> B) absolute<br />
+          <input type="radio" name="q8" value="C" /> C) fixed<br />
+          <input type="radio" name="q8" value="D" /> D) static<br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label
+            >9. Which of the following is the correct syntax for creating a
+            function in JavaScript?</label
+          ><br />
+          <input type="radio" name="q9" value="A" /> A) function = myFunction()
+          { // code }<br />
+          <input type="radio" name="q9" value="B" /> B) function myFunction() {
+          // code }<br />
+          <input type="radio" name="q9" value="C" /> C) var function
+          myFunction() { // code }<br />
+          <input type="radio" name="q9" value="D" /> D) create function
+          myFunction() { // code }<br />
+        </div>
+        <hr />
+
+        <div class="form-group">
+          <label>10. What does the CSS z-index property control?</label><br />
+          <input type="radio" name="q10" value="A" /> A) Opacity<br />
+          <input type="radio" name="q10" value="B" /> B) Order in the z-axis
+          (stack order)<br />
+          <input type="radio" name="q10" value="C" /> C) Horizontal position<br />
+          <input type="radio" name="q10" value="D" /> D) Vertical position<br />
+        </div>
+
+        <!-- Add more questions as needed -->
+
+        <!-- Submit Button -->
+        <button type="button" class="btn btn-primary" onclick="submitQuiz()">
+          Submit
+        </button>
+      </form>
+
+      <!-- Result Section -->
+      <div id="result" class="mt-4" style="display: none">
+        <h3 class="text-center">Your Score: <span id="score"></span>/10</h3>
+        <p class="text-center">Thank you for taking the test!</p>
+      </div>
+
+      <!-- Feedback Form -->
+      <div id="feedbackForm">
+        <h3 class="text-center">We'd love your feedback!</h3>
+        <div class="form-group text-center">
+          <label>Rate your experience:</label><br />
+          <div class="stars">
+            <input type="radio" name="rating" id="star5" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" name="rating" id="star4" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" name="rating" id="star3" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" name="rating" id="star2" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" name="rating" id="star1" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="feedbackRating">Feedback</label>
+          <input
+            type="text"
+            class="form-control feedback"
+            id="feedbackRating"
+            placeholder="Give your Feedback"
+          />
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-success"
+          onclick="submitFeedback()"
+        >
+          Submit Feedback
+        </button>
+        <button class="btn btn-success mx-4">
+          <a href="home2.html" class="tn btn-success">Go Home</a>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="test.js"></script>
+</html>
